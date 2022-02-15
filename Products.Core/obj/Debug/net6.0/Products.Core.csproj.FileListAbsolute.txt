@@ -1,0 +1,11 @@
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\bin\Debug\net6.0\Products.Core.deps.json
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\bin\Debug\net6.0\Products.Core.dll
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\bin\Debug\net6.0\ref\Products.Core.dll
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\bin\Debug\net6.0\Products.Core.pdb
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\Products.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\Products.Core.AssemblyInfoInputs.cache
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\Products.Core.AssemblyInfo.cs
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\Products.Core.csproj.CoreCompileInputs.cache
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\Products.Core.dll
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\ref\Products.Core.dll
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\Products.Core.pdb

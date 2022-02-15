@@ -1,0 +1,94 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Products.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Products.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Products.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Products.Core/1.0.0": {
+      "type": "project",
+      "path": "../Products.Core/Products.Core.csproj",
+      "msbuildProject": "../Products.Core/Products.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Products.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Luiiz\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Infrastructure\\Products.Infrastructure.csproj",
+      "projectName": "Products.Infrastructure",
+      "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Infrastructure\\Products.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Luiiz\\.nuget\\packages\\",
+      "outputPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Luiiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Core\\Products.Core.csproj": {
+              "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Core\\Products.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

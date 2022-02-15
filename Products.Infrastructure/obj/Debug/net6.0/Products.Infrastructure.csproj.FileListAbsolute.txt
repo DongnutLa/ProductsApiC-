@@ -1,0 +1,15 @@
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\bin\Debug\net6.0\Products.Infrastructure.deps.json
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\bin\Debug\net6.0\Products.Infrastructure.dll
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\bin\Debug\net6.0\ref\Products.Infrastructure.dll
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\bin\Debug\net6.0\Products.Infrastructure.pdb
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\bin\Debug\net6.0\Products.Core.dll
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\bin\Debug\net6.0\Products.Core.pdb
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\Products.Infrastructure.csproj.AssemblyReference.cache
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\Products.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\Products.Infrastructure.AssemblyInfoInputs.cache
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\Products.Infrastructure.AssemblyInfo.cs
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\Products.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\Products.Infrastructure.csproj.CopyComplete
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\Products.Infrastructure.dll
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\ref\Products.Infrastructure.dll
+D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\Products.Infrastructure.pdb
