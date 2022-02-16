@@ -1,10 +1,8 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Products.Core.DTOs;
 using Products.Core.Entities;
 using Products.Core.Interfaces;
-using Products.Infrastructure.Repositories;
 
 namespace Products.Api.Controllers
 {

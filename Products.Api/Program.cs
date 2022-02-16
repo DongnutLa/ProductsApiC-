@@ -19,6 +19,7 @@ builder.Services.AddDbContext<ProductsAPIContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ProductsApi"))
 );
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
+builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 
 builder.Services.AddControllers().AddJsonOptions(x =>
                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
