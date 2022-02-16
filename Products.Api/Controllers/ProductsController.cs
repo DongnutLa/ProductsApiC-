@@ -10,7 +10,7 @@ namespace Products.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductsController : Controller
+    public class ProductsController : ControllerBase
     {
         private readonly IProductRepository _productRepository;
         private readonly IMapper _mapper;
@@ -42,6 +42,22 @@ namespace Products.Api.Controllers
             var product = _mapper.Map<Product>(productDto);
             await _productRepository.PostProduct(product);
             return Ok(product);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, ProductDto productDto)
+        {
+            var product = _mapper.Map<Product>(productDto);
+            product.Id = id;
+            await _productRepository.UpdateProduct(product);
+            return Ok(product);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var res = await _productRepository.DeleteProduct(id);
+            return Ok(res);
         }
     }
 }

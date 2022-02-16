@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Products.Core.Interfaces;
 using Products.Infrastructure.Data;
+using Products.Infrastructure.Filters;
 using Products.Infrastructure.Repositories;
 using System.Text.Json.Serialization;
 
