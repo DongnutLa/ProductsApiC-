@@ -18,7 +18,14 @@ namespace Products.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetProducts()
         {
-            var Product = await _productRepository.GetProducts();
+            var Products = await _productRepository.GetProducts();
+            return Ok(Products);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetProduct(int id)
+        {
+            var Product = await _productRepository.GetProduct(id);
             return Ok(Product);
         }
     }
