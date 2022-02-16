@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uc5xo2sgyLqity7uXD10d175uMu4RdXPrygv/YegrZlrc//9BpamiG0FDcDbGt8bfUiAN+bgdypFPh8W3Sl1uQ==",
+  "dgSpecHash": "eYxXmknz9m56+WZl5fw/NwqMM5sAH14nZiT6IcJN6Uz/9TlQncL5B5gJx75rsX1Mp9URKCW3dqqKWl95vCzwxA==",
   "success": true,
-  "projectFilePath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Core\\Products.Core.csproj",
+  "projectFilePath": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Core\\Products.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

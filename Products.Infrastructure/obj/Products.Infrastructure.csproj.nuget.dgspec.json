@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Infrastructure\\Products.Infrastructure.csproj": {}
+    "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Infrastructure\\Products.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Core\\Products.Core.csproj": {
+    "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Core\\Products.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Core\\Products.Core.csproj",
+        "projectUniqueName": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Core\\Products.Core.csproj",
         "projectName": "Products.Core",
-        "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Core\\Products.Core.csproj",
+        "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Core\\Products.Core.csproj",
         "packagesPath": "C:\\Users\\Luiiz\\.nuget\\packages\\",
-        "outputPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Core\\obj\\",
+        "outputPath": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -61,14 +61,14 @@
         }
       }
     },
-    "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Infrastructure\\Products.Infrastructure.csproj": {
+    "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Infrastructure\\Products.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Infrastructure\\Products.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Infrastructure\\Products.Infrastructure.csproj",
         "projectName": "Products.Infrastructure",
-        "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Infrastructure\\Products.Infrastructure.csproj",
+        "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Infrastructure\\Products.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Luiiz\\.nuget\\packages\\",
-        "outputPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Infrastructure\\obj\\",
+        "outputPath": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -88,8 +88,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Core\\Products.Core.csproj": {
-                "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.Core\\Products.Core.csproj"
+              "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Core\\Products.Core.csproj": {
+                "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.Core\\Products.Core.csproj"
               }
             }
           }
@@ -103,6 +103,18 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

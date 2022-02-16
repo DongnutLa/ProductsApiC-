@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.UnitTests\\Products.UnitTests.csproj": {}
+    "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.UnitTests\\Products.UnitTests.csproj": {}
   },
   "projects": {
-    "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.UnitTests\\Products.UnitTests.csproj": {
+    "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.UnitTests\\Products.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.UnitTests\\Products.UnitTests.csproj",
+        "projectUniqueName": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.UnitTests\\Products.UnitTests.csproj",
         "projectName": "Products.UnitTests",
-        "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.UnitTests\\Products.UnitTests.csproj",
+        "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.UnitTests\\Products.UnitTests.csproj",
         "packagesPath": "C:\\Users\\Luiiz\\.nuget\\packages\\",
-        "outputPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.UnitTests\\obj\\",
+        "outputPath": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

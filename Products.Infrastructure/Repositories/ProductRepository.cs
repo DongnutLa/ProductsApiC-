@@ -4,24 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Products.Core.Entities;
+using Products.Core.Interfaces;
+using Products.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Products.Infrastructure.Repositories
 {
-    public class ProductRepository
+    public class ProductRepository : IProductRepository
     {
-        public IEnumerable<Product> GetProducts()
+        private readonly ProductsAPIContext _context;
+        public ProductRepository(ProductsAPIContext context)
         {
-            var products = Enumerable.Range(1, 10).Select(i => new Product
-            {
-                ProductId = i,
-                Name = $"Name {i}",
-                Description = $"Description {i}",
-                TypeId = i,
-                Price = i*10,
-                PurchaseDate = DateTime.Now,
-                Active = true,
-            });
-
+            _context = context;
+        }
+        public async Task<IEnumerable<Product>> GetProducts()
+        {
+            var products = await _context.Products.ToListAsync();
             return products;
         }
     }

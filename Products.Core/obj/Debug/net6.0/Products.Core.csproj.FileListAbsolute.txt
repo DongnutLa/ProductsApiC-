@@ -9,3 +9,4 @@ D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\Products.Core.
 D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\Products.Core.dll
 D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\ref\Products.Core.dll
 D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\Products.Core.pdb
+D:\Datos\Documentos\C#\ProductsApi\Products.Core\obj\Debug\net6.0\Products.Core.csproj.AssemblyReference.cache

@@ -13,3 +13,5 @@ D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\Prod
 D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\Products.Infrastructure.dll
 D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\ref\Products.Infrastructure.dll
 D:\Datos\Documentos\C#\ProductsApi\Products.Infrastructure\obj\Debug\net6.0\Products.Infrastructure.pdb
+D:\Datos\Documentos\C#\ProductsAPI\Products.Infrastructure\bin\Debug\net6.0\Products.Infrastructure.runtimeconfig.json
+D:\Datos\Documentos\C#\ProductsAPI\Products.Infrastructure\obj\Debug\net6.0\Products.Infrastructure.genruntimeconfig.cache

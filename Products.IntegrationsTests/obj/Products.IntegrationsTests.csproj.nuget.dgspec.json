@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.IntegrationsTests\\Products.IntegrationsTests.csproj": {}
+    "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.IntegrationsTests\\Products.IntegrationsTests.csproj": {}
   },
   "projects": {
-    "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.IntegrationsTests\\Products.IntegrationsTests.csproj": {
+    "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.IntegrationsTests\\Products.IntegrationsTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.IntegrationsTests\\Products.IntegrationsTests.csproj",
+        "projectUniqueName": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.IntegrationsTests\\Products.IntegrationsTests.csproj",
         "projectName": "Products.IntegrationsTests",
-        "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.IntegrationsTests\\Products.IntegrationsTests.csproj",
+        "projectPath": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.IntegrationsTests\\Products.IntegrationsTests.csproj",
         "packagesPath": "C:\\Users\\Luiiz\\.nuget\\packages\\",
-        "outputPath": "D:\\Datos\\Documentos\\C#\\ProductsApi\\Products.IntegrationsTests\\obj\\",
+        "outputPath": "D:\\Datos\\Documentos\\C#\\ProductsAPI\\Products.IntegrationsTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
