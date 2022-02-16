@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Products.Core.Interfaces;
 using Products.Infrastructure.Data;
 using Products.Infrastructure.Repositories;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,11 @@ builder.Services.AddDbContext<ProductsAPIContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ProductsApi"))
 );
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
+
+builder.Services.AddControllers().AddJsonOptions(x =>
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 

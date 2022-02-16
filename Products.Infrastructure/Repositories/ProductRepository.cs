@@ -27,5 +27,10 @@ namespace Products.Infrastructure.Repositories
             var products = await _context.Products.FirstOrDefaultAsync(x=>x.Id == id);
             return products;
         }
+        public async Task PostProduct(Product product)
+        {
+            _context.Products.Add(product);
+            await _context.SaveChangesAsync();
+        }
     }
 }
