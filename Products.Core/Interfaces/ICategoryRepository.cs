@@ -12,7 +12,7 @@ namespace Products.Core.Interfaces
         Task<IEnumerable<Category>> GetCategories();
         Task<Category> GetCategory(int id);
         Task PostCategory(Category category);
-        Task<bool> UpdateCategory(Category category);
+        Task<bool> UpdateCategory(Category category, Category currentCategory);
         Task<bool> DeleteCategory(int id);
     }
 }

@@ -32,9 +32,8 @@ namespace Products.Infrastructure.Repositories
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
         }
-        public async Task<bool> UpdateProduct(Product product)
+        public async Task<bool> UpdateProduct(Product product, Product currentProduct)
         {
-            var currentProduct = await GetProduct(product.Id);
             currentProduct.Name = product.Name;
             currentProduct.Description = product.Description;
             currentProduct.PurchaseDate = product.PurchaseDate;

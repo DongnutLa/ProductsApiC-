@@ -11,18 +11,18 @@ namespace Products.Api.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly ICategoryRepository _categoryRepository;
+        private readonly ICategoryService _categoryService;
         private readonly IMapper _mapper;
-        public CategoriesController(ICategoryRepository categoryRepository, IMapper mapper)
+        public CategoriesController(ICategoryService categoryService, IMapper mapper)
         {
-            _categoryRepository = categoryRepository;
+            _categoryService = categoryService;
             _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetCategories()
         {
-            var categories = await _categoryRepository.GetCategories();
+            var categories = await _categoryService.GetCategories();
             var categoriesDto = _mapper.Map<IEnumerable<CategoryDto>>(categories);
             return Ok(categoriesDto);
         }
@@ -30,7 +30,7 @@ namespace Products.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCategory(int id)
         {
-            var category = await _categoryRepository.GetCategory(id);
+            var category = await _categoryService.GetCategory(id);
             var categoryDto = _mapper.Map<CategoryDto>(category);
             return Ok(categoryDto);
         }
@@ -39,23 +39,22 @@ namespace Products.Api.Controllers
         public async Task<IActionResult> Post(CategoryDto categoryDto)
         {
             var category = _mapper.Map<Category>(categoryDto);
-            await _categoryRepository.PostCategory(category);
+            await _categoryService.PostCategory(category);
             return Ok(category);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, CategoryDto categoryDto)
+        [HttpPut]
+        public async Task<IActionResult> Put(CategoryDto categoryDto)
         {
             var category = _mapper.Map<Category>(categoryDto);
-            category.Id = id;
-            await _categoryRepository.UpdateCategory(category);
+            await _categoryService.UpdateCategory(category);
             return Ok(category);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var res = await _categoryRepository.DeleteCategory(id);
+            var res = await _categoryService.DeleteCategory(id);
             return Ok(res);
         }
     }

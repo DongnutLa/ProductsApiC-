@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Products.Core.Interfaces;
+using Products.Core.Services;
 using Products.Infrastructure.Data;
 using Products.Infrastructure.Filters;
 using Products.Infrastructure.Repositories;
@@ -18,6 +19,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ProductsAPIContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ProductsApi"))
 );
+
+builder.Services.AddTransient<IProductService, ProductService>();
+builder.Services.AddTransient<ICategoryService, CategoryService>();
+
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 

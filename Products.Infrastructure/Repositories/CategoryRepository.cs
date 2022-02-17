@@ -36,9 +36,8 @@ namespace Products.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task<bool> UpdateCategory(Category category)
+        public async Task<bool> UpdateCategory(Category category, Category currentCategory)
         {
-            var currentCategory = await GetCategory(category.Id);
             currentCategory.Name = category.Name;
 
             int rows = await _context.SaveChangesAsync();
