@@ -40,7 +40,7 @@ namespace Products.Api.Controllers
         {
             var category = _mapper.Map<Category>(categoryDto);
             await _categoryService.PostCategory(category);
-            return Ok(category);
+            return new ObjectResult(category) { StatusCode = StatusCodes.Status201Created };
         }
 
         [HttpPut]
@@ -48,14 +48,14 @@ namespace Products.Api.Controllers
         {
             var category = _mapper.Map<Category>(categoryDto);
             await _categoryService.UpdateCategory(category);
-            return Ok(category);
+            return new ObjectResult(category) { StatusCode = StatusCodes.Status201Created };
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             var res = await _categoryService.DeleteCategory(id);
-            return Ok(res);
+            return NoContent();
         }
     }
 }

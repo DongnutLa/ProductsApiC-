@@ -17,9 +17,9 @@ namespace Products.Infrastructure.Repositories
         {
             _context = context;
         }
-        public async Task<IEnumerable<Product>> GetProducts()
+        public IEnumerable<Product> GetProducts()
         {
-            var products = await _context.Products.ToListAsync();
+            var products = _context.Products.AsEnumerable();
             return products;
         }
         public async Task<Product> GetProduct(int id)

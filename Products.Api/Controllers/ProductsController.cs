@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Products.Core.DTOs;
 using Products.Core.Entities;
 using Products.Core.Interfaces;
+using Products.Core.QueryFilters;
 
 namespace Products.Api.Controllers
 {
@@ -19,10 +21,21 @@ namespace Products.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetProducts()
+        public IActionResult GetProducts([FromQuery] ProductQueryFilter filters)
         {
-            var products = await _productService.GetProducts();
+            var products = _productService.GetProducts(filters);
             var productsDto = _mapper.Map<IEnumerable<ProductDto>>(products);
+
+            var metadata = new
+            {
+                products.TotalCount,
+                products.PageSize,
+                products.CurrentPage,
+                products.TotalPages,
+                products.HasNextPage,
+                products.HasPreviousPage
+            };
+            Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
             return Ok(productsDto);
         }
 
@@ -39,7 +52,7 @@ namespace Products.Api.Controllers
         {
             var product = _mapper.Map<Product>(productDto);
             await _productService.PostProduct(product);
-            return Ok(product);
+            return new ObjectResult(product) { StatusCode = StatusCodes.Status201Created };
         }
 
         [HttpPut]
@@ -47,14 +60,14 @@ namespace Products.Api.Controllers
         {
             var product = _mapper.Map<Product>(productDto);
             await _productService.UpdateProduct(product);
-            return Ok(product);
+            return new ObjectResult(product) { StatusCode = StatusCodes.Status201Created };
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             var res = await _productService.DeleteProduct(id);
-            return Ok(res);
+            return NoContent();
         }
     }
 }

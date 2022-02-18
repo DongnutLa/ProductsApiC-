@@ -9,7 +9,7 @@ namespace Products.Core.Interfaces
 {
     public interface IProductRepository
     {
-        Task<IEnumerable<Product>> GetProducts();
+        IEnumerable<Product> GetProducts();
         Task<Product> GetProduct(int id);
         Task PostProduct(Product product);
         Task<bool> UpdateProduct(Product product, Product currentProduct);

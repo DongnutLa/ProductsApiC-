@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Products.Core.Exceptions;
 
 namespace Products.Core.Services
 {
@@ -21,7 +22,7 @@ namespace Products.Core.Services
             var Category = await _categoryRepository.GetCategory(id);
             if (Category == null)
             {
-                throw new Exception("Category doesn't exist. Please check de Category id");
+                throw new ProductsExceptions("Category doesn't exist. Please check de Category id");
             }
             return Category;
         }
@@ -41,7 +42,7 @@ namespace Products.Core.Services
             var currentCategory = await GetCategory(Category.Id);
             if (currentCategory == null)
             {
-                throw new Exception("Category doesn't exist. Please check the Category id");
+                throw new ProductsExceptions("Category doesn't exist. Please check the Category id");
             }
             return await _categoryRepository.UpdateCategory(Category, currentCategory);
         }
@@ -51,7 +52,7 @@ namespace Products.Core.Services
             var Category = await _categoryRepository.GetCategory(id);
             if (Category == null)
             {
-                throw new Exception("Category doesn't exist. Please check de Category id");
+                throw new ProductsExceptions("Category doesn't exist. Please check de Category id");
             }
             return await _categoryRepository.DeleteCategory(id);
         }
