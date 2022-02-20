@@ -68,3 +68,6 @@ D:\Datos\Documentos\C#\ProductsAPI\Products.Api\bin\Debug\net6.0\AutoMapper.Exte
 D:\Datos\Documentos\C#\ProductsAPI\Products.Api\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 D:\Datos\Documentos\C#\ProductsAPI\Products.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 D:\Datos\Documentos\C#\ProductsAPI\Products.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Datos\Documentos\C#\ProductsAPI\Products.Api\bin\Debug\net6.0\FluentValidation.dll
+D:\Datos\Documentos\C#\ProductsAPI\Products.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\Datos\Documentos\C#\ProductsAPI\Products.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Products.Core.Interfaces;
 using Products.Core.Services;
@@ -33,6 +34,11 @@ builder.Services.AddControllers().AddJsonOptions(x =>
                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddMvc().AddFluentValidation(options =>
+{
+    options.RegisterValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
+});
 
 var app = builder.Build();
 

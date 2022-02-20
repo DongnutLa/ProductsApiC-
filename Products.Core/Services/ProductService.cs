@@ -51,6 +51,10 @@ namespace Products.Core.Services
             {
                 throw new ProductsExceptions("Category doesn't exist please check the categories that are available");
             }
+            if (product.PurchaseDate is not DateTime)
+            {
+                throw new ProductsExceptions("Purchase date must be a valid date");
+            }
             if (product.PurchaseDate > DateTime.Now)
             {
                 throw new ProductsExceptions("Purchase date must be earlier than the current date");
